@@ -1,28 +1,35 @@
-* {
-    box-sizing: border-box;
-    outline: 0;
-}
-
-#esconder {
-    background: black;
-    color: black;
-}
-.apagar {
-    background: black;
-    color: black;
-}
-#pagina {
-    color: white;
-    background-color: black;
-}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
+#informa {
+    border-radius: 1px;
+    margin: 0;
+    padding: 100px;
+    margin: 0;
+    font-size: larger;
+
+}
+
+#pagina {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/img/madeira-branca-texturizada-com-fundo-de-sombra-de-folhas_53876-160545.jpg);
+    
+}
+
 .msg-erro {
     color: red;
+}
+
+#footer {
+    margin-top: 300px;
+}
+
+li.decimal {
+    list-style-type: decimal;
 }

@@ -4,28 +4,28 @@
 <head>
     <title>Agenda Digital | Lista de Atendimento</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <style type="text/css">
-        .msg-erro {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+
 </head>
 
-<body id="pagina" class="">
-    <h1 class="display-3 lead text-success text-center">Obrigado Por Agendar</h1>
-    <p class="lead text-light my-5 text-center">Nessa Página Você terá a Noção de Quando será Atendido(a)</p>
-    <p class="lead text-light my-5 text-center">Confira Agora a Ordem de Atendimento</p>
-    <section class="container">
-        <p>
-            <button class="btn-tarefa btn btn-lg btn-block bg-transparent"></button>
-            <input type="hidden" class="input-tarefa">
-        </p>
-
-        <ul class="tarefas"></ul>
+<body id="pagina">
+    <h1 class="display-3 lead text-dark text-center">Obrigado Por Agendar</h1>
+    <h2 class="lead text-dark text-center p-5">Abaixo está a lista em ordem Numérica dos atendimentos</h2>
+    
+    <section class=" tarefas container btn-tarefa input-tarefa">
     </section>
+    <footer id="footer" class="bg-transparent">
+        <div class="row">
+            <div class="col-md text-center">
+                <h6 class="text-center">&copy <a href="https://www.instagram.com/gustopster/" target="_blank"
+                        class="text-success">gustopster</a> todos direitos
+                    reservados</h6>
+            </div>
+    </footer>
+    <br>
 </body>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/funcoes.js"></script>
-<script src="js/funcoesSegundaPagina.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/travarCampos.js"></script>
+<script src="js/armazenaLista.js"></script>
+
 </html>

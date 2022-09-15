@@ -4,24 +4,22 @@
 <head>
 	<title>Agenda Digital | Agendamento</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.6.2-dist/css/bootstrap.css">
 </head>
 
 <body id="pagina">
-	<section id="esconder">
-		<ul class="tarefas"></ul>
-	</section>
-	<h1 class=" container text-center mb-5 display-4 text-success">Bem Vindo ao Agendamento</h1>
+	<h1 class="display-3 lead text-dark text-center p-2 mb-3">Agenda Digital</h1>
 	<!--Mensagem de Bem Vindo-->
-	<div class="card-deck mb-3 text-center col-md-8 d-flex float-left">
-		<div class="card bg-transparent border-light mb-4 shadow-sm">
+
+	<div class="card-deck mb-3 text-center col-md d-flex">
+		<div class="card bg-transparent border-dark mb-4 shadow-sm">
 			<div class="card-header">
-				<h4 class="my-0 font-weight-normal">Corte</h4>
+				<h4 class="my-0 font-weight-normal text-dark">Corte</h4>
 			</div>
 			<div class="card-body">
-				<h1 class="card-title pricing-card-title">R$10 <small class="text-light">/ Serviço</small></h1>
+				<h1 class="card-title pricing-card-title">R$10 <small class="text-dark">/ Serviço</small></h1>
 				<img src="img/como-cortar-cabelo-sozinha-og.jpg" width="150px">
-				<ul class="border border-light p-2 list-unstyled mt-3 mb-4">
+				<ul class="border border-dark p-2 list-unstyled mt-3 mb-4">
 					<li>Será Feito:</li>
 					<li>Corte</li>
 					<li>Hidratação</li>
@@ -29,87 +27,90 @@
 					<li>Chapinha</li>
 				</ul>
 				<button onclick="adicionarItemUm()" type="submit"
-					class="btn btn-lg btn-block bg-transparent btn-outline-success">Adicionar + </button>
-				<button onclick="removerItemUm()" type="submit" class="btn btn-lg btn-block bg-transparent btn-outline-success">Remover -
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Adicionar + </button>
+				<button onclick="removerItemUm()" type="submit"
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Remover -
 				</button>
 			</div>
 		</div>
-		<div class=" bg-transparent border-light card mb-4 shadow-sm">
+		<div class=" bg-transparent border-dark card mb-4 shadow-sm">
 			<div class="card-header">
-				<h4 class="my-0 font-weight-normal">Sobrancelha</h4>
+				<h4 class="my-0 font-weight-normal text-dark">Sobrancelha</h4>
 			</div>
 			<div class="card-body">
-				<h1 class="card-title pricing-card-title">R$15 <small class="text-light">/ Serviço</small></h1>
+				<h1 class="card-title pricing-card-title">R$15 <small class="text-dark">/ Serviço</small></h1>
 				<img src="img/download.jpg" width="150px">
-				<ul class="border border-light p-2 list-unstyled mt-3 mb-4">
+				<ul class="border border-dark p-2 list-unstyled mt-3 mb-4">
 					<li>Será Feito:</li>
 					<li>Design de Sobrancelha</li>
 					<li>Micropigmentação</li>
 				</ul>
 				<button onclick="adicionarItemDois()" type="submit"
-					class="btn btn-lg btn-block bg-transparent btn-outline-success">Adicionar + </button>
-				<button onclick="removerItemDois() " type="submit" class="btn btn-lg btn-block bg-transparent btn-outline-success">Remover
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Adicionar + </button>
+				<button onclick="removerItemDois() " type="submit"
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Remover
 					- </button>
 			</div>
 		</div>
-		<div class="card bg-transparent border-light mb-4 shadow-sm">
+		<div class="card bg-transparent border-dark mb-4 shadow-sm">
 			<div class="card-header">
-				<h4 class="my-0 font-weight-normal">Unhas</h4>
+				<h4 class="my-0 font-weight-normal text-dark">Unhas</h4>
 			</div>
 			<div class="card-body">
-				<h1 class="card-title pricing-card-title">R$29 <small class="text-light">/ Serviço</small></h1>
+				<h1 class="card-title pricing-card-title">R$29 <small class="text-dark">/ Serviço</small></h1>
 				<img src="img/unhas.jpg" width="150px">
-				<ul class="border border-light p-2 list-unstyled mt-3 mb-4">
+				<ul class="border border-dark p-2 list-unstyled mt-3 mb-4">
 					<li>Será Feito:</li>
 					<li>Pé e Mão</li>
 					<li>Unha em Gel</li>
 					<li>Unha de Vidro</li>
 				</ul>
 				<button onclick="adicionarItemTres()" type="submit"
-					class="btn btn-lg btn-block bg-transparent btn-outline-success">Adicionar + </button>
-				<button onclick="removerItemTres()" type="submit" class="btn btn-lg btn-block bg-transparent btn-outline-success">Remover
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Adicionar + </button>
+				<button onclick="removerItemTres()" type="submit"
+					class="btn btn-lg btn-block bg-transparent btn-outline-dark">Remover
 					- </button>
 			</div>
 		</div>
 	</div>
 	<!--Formulário Para Enviar Pedido INICIO-->
-	<div class='container row-md col-md-4 float-right'>
+	<div class='container row-md'>
 		<form action="paginaEspera.html" method="get" id='form-contato'
-			class="shadow-lg p-5 mb-5 bg-transparent border border-light">
+			class="shadow-lg p-5 mb-5 bg-transparent border border-dark">
 			<div class="form-group">
-				<label for="nome" class="text-light">Nome</label>
+				<label for="nome" class="text-dark">Nome</label>
 				<input type="text" class="form-control" id="nome" name="nome" placeholder="Infome o Nome">
 				<span class='msg-erro msg-nome'></span>
 			</div>
 			<div class="form-group">
-				<label for="email" class="text-light">E-mail</label>
+				<label for="email" class="text-dark">E-mail</label>
 				<input type="email" class="form-control" id="email" name="email" placeholder="Informe o E-mail">
 				<span class='msg-erro msg-email'></span>
 			</div>
 			<div class="form-group">
-				<label for="text" class="text-light">WhatsApp</label>
-				<input type="number" onkeypress="return apenasNumeros()" placeholder="5544333332222"
+				<label for="text" class="text-dark">WhatsApp</label>
+				<input type="number" onkeypress="return apenasNumeros()" placeholder="Adicione 55+DDD+ Seu Número"
 					class="form-control" id="WhatsApp" name="WhatsApp" oninput="javascript: 
 				if (this.value.length > this.maxLength)
 				this.value = this.value.slice(0, this.maxLength);" type="number" minlength="11" maxlength="13">
 				<span class='msg-erro msg-WhatsApp'></span>
 			</div>
 			<div class="form-group">
-				<label for="nome" class="text-light">Nome para ser Chamado</label>
-				<input type="text" class="input-tarefa form-control" id="nome" name="nome" placeholder="Infome o Nome">
+				<label for="nome" class="text-dark">Nome para ser chamado(a) pela Lista</label>
+				<input type="text" class="input-tarefa form-control tarefas" id="nome" name="nome"
+					placeholder="Aqui aparecerá o seu nome no Agendamento">
 			</div>
-			<div class=" p-2 form-group border border-success">
-				<label for="nome" class="text-success">Carrinho de Serviços</label>
-				<p id="paragrafoUm" class="text-light"></p>
-				<p id="paragrafoDois" class="text-light"></p>
-				<p id="paragrafoTres" class="text-light"></p>
+			<div class=" p-2 form-group border border-dark">
+				<label for="nome" class="text-dark">Carrinho de Serviços</label>
+				<p id="paragrafoUm" class="text-success"></p>
+				<p id="paragrafoDois" class="text-success"></p>
+				<p id="paragrafoTres" class="text-success"></p>
 			</div>
-			<button type="submit" class="btn-tarefa btn btn-lg btn-block bg-transparent btn-outline-success">
+			<button type="submit" class="btn-tarefa btn btn-lg btn-block bg-transparent btn-outline-dark">
 				Enviar
 			</button>
 		</form>
-
-		<footer class="bg-transparent mx-auto d-block">
+		<footer class="bg-transparent">
 			<div class="row">
 				<div class="col-md text-center">
 					<h6 class="mb-5 text-center">&copy <a href="https://www.instagram.com/gustopster/" target="_blank"
@@ -118,10 +119,10 @@
 				</div>
 		</footer>
 	</div>
-	<!--Formulário Para Enviar Pedido INICIO-->
+	<!--Formulário Para Enviar Pedido FINAL-->
 </body>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/funcoes.js"></script>
-<script src="js/funcoesSegundaPagina.js"></script>
+<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/travarCampos.js"></script>
+<script src="js/armazenaLista.js"></script>
 
 </html>
