@@ -17,6 +17,13 @@ input[type="number"] {
 
 }
 
+<<<<<<< HEAD
+=======
+#pagina {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(img/madeira-branca-texturizada-com-fundo-de-sombra-de-folhas_53876-160545.jpg);
+}
+
+>>>>>>> 4af1c370473832d63c72fe1377cc591fcae5e0a6
 .msg-erro {
     color: red;
 }
