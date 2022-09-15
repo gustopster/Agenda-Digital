@@ -73,6 +73,6 @@ function adicionaTarefasSalvas() {
 
   for (let tarefa of listaDeTarefas) {
     criaTarefa(tarefa);
-  }
-}
+  };
+};
 adicionaTarefasSalvas();
